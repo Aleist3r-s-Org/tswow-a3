@@ -23,3 +23,6 @@ Thumbs.db
 
 # Logs
 /log.txt
+
+# Some files in testing I don't want to push yet
+tswow-scripts/util/ClientPatches.ts
