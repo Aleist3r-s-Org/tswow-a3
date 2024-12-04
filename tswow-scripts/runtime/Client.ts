@@ -29,7 +29,7 @@ import { Dataset } from './Dataset';
 import { Identifier } from './Identifiers';
 import { NodeConfig } from './NodeConfig';
 
-export const CLEAN_CLIENT_MD5 = '45892bdedd0ad70aed4ccd22d9fb5984'
+export const CLEAN_CLIENT_MD5 = 'F6DEB552AAAC0D69E0EC5F3A31199F5B'
 
 const processMap: {[datasetName: string]: Process[]} = {}
 
@@ -226,7 +226,7 @@ export class Client {
                     + ` dll at ${ipaths.bin.ClientExtensions_dll.get()}`
                 )
             }
-            wowbin = wowbin.slice(0,0x758c00)
+            wowbin = wowbin.slice(0, 0x85FC00)
             ipaths.bin.ClientExtensions_dll
                 .copy(this.path.ClientExtensions_dll)
         }
